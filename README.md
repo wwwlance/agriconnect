@@ -71,7 +71,3 @@ Transactions via TypeORM DataSource
 Atomic bulk inserts
 
 to ensure no duplicate or inconsistent requests under parallel load.
-
-📈 Future Improvements
-WebSocket notification gateway
-Integration + E2E test suite expansion
