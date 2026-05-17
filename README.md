@@ -9,6 +9,7 @@ Modular service architecture
 Unit testing with Jest
 
 🚀 Tech Stack
+
 NestJS
 Nx Monorepo
 PostgreSQL (TypeORM)
@@ -17,6 +18,7 @@ Jest (Unit Testing)
 Node.js
 
 🧩 Architecture Overview
+
 The system is composed of multiple services:
 
 Farmers Service – manages farmer data
@@ -25,6 +27,7 @@ Requests Service – handles distributor-to-farmer requests
 Redis Layer – publishes request events for real-time processing
 
 ⚡ Key Features
+
 1. Concurrency-Safe Requests
 
 Uses PostgreSQL pessimistic locking to prevent race conditions when multiple distributors send requests simultaneously.
@@ -39,6 +42,7 @@ request.created → Redis → Notification layer
 All request operations are wrapped in database transactions to ensure atomicity.
 
 🧪 Testing Strategy
+
 Unit Tests
 Service logic isolation
 Repository mocking
@@ -48,6 +52,7 @@ Parallel request execution using Promise.all
 Validates locking and transaction safety
 
 🐳 Running the Project
+
 npm install
 Start database (Docker)
 docker compose up -d
